@@ -155,44 +155,59 @@ button{
 
 
 /* Projects */
-
+.projects-container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.projects-title{
+  font-size: 2rem;
+  padding: 30px 0;
+}
 /* Scrolling images */
 .projects-row{
   display: flex;
   flex-direction: row;
-  /* gap: 20px; */
+  gap: 20px;
+  margin-bottom: 40px;
 }
-
 
 
 .screen .img1 {
-	bottom: -40px;
+	bottom: -20px;
 }
 .screen .img2 {
-	bottom: -1190px;
+	bottom: -980px;
 
 }
 .screen .img3 {
-	bottom: -550px;
+	bottom: -450px;
 }
 
 .screen .img4 {
-	bottom: -920px;
+	bottom: -750px;
 }
 
 .screen .img5 {
-	bottom: -800px;
+	bottom: -650px;
 }
 
 
 .screen .img6 {
-	bottom: -630px;
+	bottom: -510px;
 }
 
+.screen .img7 {
+	bottom: -1120px;
+}
+
+
+.screen .img8 {
+	bottom: -280px;
+}
 .screen {
 	display: block;
 	width: 300px;
-	height: 350px;
+	height: 300px;
 	overflow: hidden;
 	position: relative;
 	border: 2px solid #b3b3b3;
