@@ -1,3 +1,7 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
   margin: 0;
   padding: 0;
@@ -8,10 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   overflow-x: hidden;
 }
 body {
- 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Epilogue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -35,10 +36,12 @@ code {
 .header-container header{
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  align-items: center;
+  padding: 10px 0;
 }
 .logo-name{
   font-size: 2rem;
+  font-family: 'Bungee Shade', cursive;
 }
 nav{
   overflow-y: hidden;
@@ -77,6 +80,17 @@ ul.nav-links li a:hover{
 }
 .hero #title{
   font-size: 3rem;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://www.adobe.com/content/dam/cc/xd/scrollanimation/maskShapesNew.svg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(250, 250, 250, 0.3);
 }
 .contact{
   padding: 30px 0;
@@ -235,4 +249,28 @@ button{
   -ms-transition: all 11s;
   -o-transition: all 11s;
   transition: all 11s;
+}
+
+
+/* Skills */
+.skills-title{
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+/* Footer */
+.footer{
+  height: 50px;
+  background-color: #bfb7c0;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.githubsvg{
+  width: 100%;
+  max-width: 30px;
+
 }

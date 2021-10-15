@@ -27,9 +27,7 @@ function Hero() {
                                 <li>
                                     <a href="#skills">Skills</a>
                                 </li>
-                                <li>
-                                    <a href="#experience">Experience</a>
-                                </li>
+
                             </ul>
                         </nav>
                     </div>
