@@ -1,13 +1,223 @@
-body {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  overflow-x: hidden;
+}
+body {
+ 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #0D171C;
+  /* color: #bfb7c0; */
+  color: #fff;
+  margin: 0 auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  }
+  .header-container{
+  z-index: 99;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+.header-container header{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.logo-name{
+  font-size: 2rem;
+}
+nav{
+  overflow-y: hidden;
+}
+ul.nav-links, ul.nav-links li{
+  overflow-y: hidden;
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+ul.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 5px;
+}
+ul.nav-links li a:hover{
+ border-bottom: 3px solid;
+}
+
+/* Hero section */
+.hero, #about, #projects, #skills, #experience{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  
+}
+.hero{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  position: relative;
+  display: flex;
+  height: 60vh;
+}
+.hero #title{
+  font-size: 3rem;
+}
+.contact{
+  padding: 30px 0;
+  display: flex;
+  gap: 30px;
+}
+
+button{
+ background-color: #0D171C;
+  color: #37b6c5;
+  font-size: 1.3rem;
+  border: 2px solid #37b6c5;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+.contact-me{
+  background-color: #37b6c5;
+  color: #0D171C;
+  text-decoration: none;
+  border: 2px solid #37b6c5;
+  font-size: 1.3rem;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+/* About Section */
+#about{
+  
+  
+}
+.about-container{
+  display: flex;
+  justify-content:flex-start;
+  align-content: center;
+}
+.profile-picture{
+  width: 40%;
+}
+
+.my-profile{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+.card-container{
+  width: 55%;
+}
+
+#about-title{
+  font-size: 2rem;
+}
+.card{
+  position: relative;
+  top:20px;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color:#bfb7c0;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  color: #0D171C;
+  
+  height: 250px;
+}
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color:#0D171C;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-header:first-child {
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.about-text{
+  padding: 30px;
+}
+
+
+/* Projects */
+
+/* Scrolling images */
+.projects-row{
+  display: flex;
+  flex-direction: row;
+  /* gap: 20px; */
+}
+
+
+
+.screen .img1 {
+	bottom: -40px;
+}
+.screen .img2 {
+	bottom: -1190px;
+
+}
+.screen .img3 {
+	bottom: -550px;
+}
+
+.screen .img4 {
+	bottom: -920px;
+}
+
+.screen .img5 {
+	bottom: -800px;
+}
+
+
+.screen .img6 {
+	bottom: -630px;
+}
+
+.screen {
+	display: block;
+	width: 300px;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #b3b3b3;
+	border-radius: 1px;
+	margin: 0 auto;
+}
+.screen img{
+  width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 0;
+  margin:0;
+  padding:0;
+	-webkit-transition: top 11s;
+	-moz-transition: top 11s;
+	-ms-transition: top 11s;
+	-o-transition: top 11s;
+	transition: bottom 11s;
+}
+
+.screen:hover img {
+  bottom: 0;
+  -webkit-transition: all 11s;
+  -moz-transition: all 11s;
+  -ms-transition: all 11s;
+  -o-transition: all 11s;
+  transition: all 11s;
 }
