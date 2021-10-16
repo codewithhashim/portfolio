@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+ text-decoration: none; 
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,6 +28,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   }
+
+
+/* Header */
   .header-container{
   z-index: 99;
   position: relative;
@@ -46,6 +50,9 @@ code {
 nav{
   overflow-y: hidden;
 }
+#mobilenav{
+  display: none;
+}
 ul.nav-links, ul.nav-links li{
   overflow-y: hidden;
   list-style-type: none;
@@ -57,9 +64,10 @@ ul.nav-links li a{
   text-decoration: none;
   color: #fff;
   padding: 0 5px;
+  z-index:222;
 }
 ul.nav-links li a:hover{
- border-bottom: 3px solid;
+ color:#37b6c5;
 }
 
 /* Hero section */
@@ -73,7 +81,7 @@ ul.nav-links li a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: 3;
   position: relative;
   display: flex;
   height: 60vh;
@@ -96,9 +104,10 @@ ul.nav-links li a:hover{
   padding: 30px 0;
   display: flex;
   gap: 30px;
+  justify-content:center;
 }
 
-button{
+.fiverr-btn{
  background-color: #0D171C;
   color: #37b6c5;
   font-size: 1.3rem;
@@ -165,6 +174,7 @@ button{
 }
 .about-text{
   padding: 30px;
+  
 }
 
 
@@ -273,4 +283,109 @@ button{
   width: 100%;
   max-width: 30px;
 
+}
+#navbars{
+  /* display: none; */
+}
+
+/* Responsive */
+@media screen and (max-width:768px ) {
+  header{
+    padding: 20px!important;
+  }
+  
+  .logo-name{
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  #link1, #link2, #link3{
+    position: fixed;
+    margin: 0;
+    right: -22px;
+    transform: rotate(-90deg);
+    background: #37b6c5;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: 0;
+  }
+  #link1:hover, #link2:hover, #link3:hover{
+color:#0D171C;
+  }
+  #link1{
+    top: 50px;
+   
+  }
+  #link2{
+    top: 150px;
+    right: -32px;
+    
+  }
+  #link3{
+    top: 250px;
+    
+  }
+  .hero {
+    display:flex;
+    padding: 0px 25px;
+    align-items:flex-start;
+  }
+  .hero > #title{
+    font-size:2rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align:left;
+    
+  }
+  .contact{
+  display:flex;
+    gap:10px;
+    
+  }
+  .fiverr-btn{
+    font-size:1rem;
+    padding: 5px;
+  }
+  .contact-me{
+    font-size:1rem;
+    padding: 5px;
+  }
+  .about-container{
+    flex-direction:column;
+    padding:20px;
+   
+  }
+  .about-text{
+    padding:20px;
+  }
+  .profile-picture{
+width:100%;
+display:flex;
+justify-content:center;
+  }
+  .card-container{
+    width: 100%;
+    overflow:hidden;
+    margin-top:50px;
+  }
+  #about-title{
+    text-align:center;
+    background:#37b6c5aa;
+    width:
+  }
+  .projects-container{
+    width: calc(100% - 20px);
+   
+  }
+  .projects-title{
+   text-align:center;
+    
+  }
+  .projects-row{
+   
+    flex-direction: column;
+   
+  }
+  .vertical-timeline{
+    width: calc(100% - 30px);
+  }
 }

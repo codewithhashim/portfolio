@@ -1,45 +1,50 @@
 import { useRef } from "react";
 
+
 /* eslint-disable no-restricted-globals */
 function Hero() {
 
 
-    const canvasRef = useRef()
 
     return (
         <div className="background-container">
 
             <div className="header-container">
+
                 <header>
+
                     <div className="logo-name">
                         Hashim Muhammad
                     </div>
                     <div className="navcontainer">
-                        <nav>
+                        <nav className="desktopnav">
                             <ul className="nav-links">
                                 <li>
-                                    <a href="#about">About</a>
+                                    <a href="#about" id="link1" >About</a>
                                 </li>
 
                                 <li>
-                                    <a href="#projects">Projects</a>
+                                    <a href="#projects" id="link2">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="#skills">Skills</a>
+                                    <a href="#skills" id="link3">Skills</a>
                                 </li>
 
                             </ul>
                         </nav>
+
+
+
                     </div>
                 </header>
-            </div>
+            </div >
 
 
 
             <div className="hero">
                 <h1 id="title">A Developer, Teacher and a Change Maker! </h1>
                 <div className="contact">
-                    <button>
+                    <button className="fiverr-btn">
                         Hire me on Fiverr
                     </button>
                     <a href="mailto:muhammadhashim4e@gmail.com" className="contact-me">Get in touch</a>
@@ -48,7 +53,7 @@ function Hero() {
             </div>
             <div class="stars"></div>
             <div class="twinkling"></div>
-        </div>
+        </div >
 
     )
 
