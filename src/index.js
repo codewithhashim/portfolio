@@ -9,6 +9,7 @@ import Skills from './components/Skills'
 import Hero from './components/Hero';
 import './index.css';
 import './components/Hero.scss'
+import Btt from './components/Btt'
 
 
 
@@ -22,7 +23,9 @@ function Home() {
       <Projects />
 
       <Skills />
+
       <Footer />
+      <Btt />
     </div>
   )
 }

@@ -114,12 +114,15 @@ ul.nav-links li a:hover{
   border: 2px solid #37b6c5;
   padding: 10px 25px;
   border-radius: 5px;
+  
 }
+
 .contact-me{
   background-color: #37b6c5;
   color: #0D171C;
   text-decoration: none;
   border: 2px solid #37b6c5;
+
   font-size: 1.3rem;
   padding: 10px 25px;
   border-radius: 5px;
@@ -370,7 +373,7 @@ justify-content:center;
   #about-title{
     text-align:center;
     background:#37b6c5aa;
-    width:
+    /* width: */
   }
   .projects-container{
     width: calc(100% - 20px);
@@ -389,3 +392,5 @@ justify-content:center;
     width: calc(100% - 30px);
   }
 }
+
+

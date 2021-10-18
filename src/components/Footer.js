@@ -7,6 +7,7 @@ function Footer() {
                     <img src={githubsvg} alt="" className="githubsvg" />
                 </a>
             </div>
+
         </div>
     )
 }

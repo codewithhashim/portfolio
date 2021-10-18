@@ -44,9 +44,12 @@ function Hero() {
             <div className="hero">
                 <h1 id="title">A Developer, Teacher and a Change Maker! </h1>
                 <div className="contact">
-                    <button className="fiverr-btn">
-                        Hire me on Fiverr
-                    </button>
+
+
+                    <a href="https://www.fiverr.com/muhammadhashim_" className="fiverr-btn">
+                        Hire me on Fiverr 🔥
+                    </a>
+
                     <a href="mailto:muhammadhashim4e@gmail.com" className="contact-me">Get in touch</a>
                 </div>
 
