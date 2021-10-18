@@ -5,7 +5,10 @@ function Footer() {
             <div className="footer-content">
                 <a href="https://github.com/ProHashim" target="_blank" rel="noreferrer">
                     <img src={githubsvg} alt="" className="githubsvg" />
-                </a>
+
+                </a> <span>
+                    Made With 💙 and ReactJS
+                </span>
             </div>
 
         </div>

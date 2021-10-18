@@ -281,7 +281,9 @@ ul.nav-links li a:hover{
   justify-content: center;
   align-items: center;
 }
-
+.footer span{
+  color: #0D171C;
+}
 .githubsvg{
   width: 100%;
   max-width: 30px;
