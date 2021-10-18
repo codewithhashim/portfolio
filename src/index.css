@@ -136,7 +136,8 @@ ul.nav-links li a:hover{
 .about-container{
   display: flex;
   justify-content:flex-start;
-  align-content: center;
+  align-items: center;
+ 
 }
 .profile-picture{
   width: 40%;
@@ -148,12 +149,15 @@ ul.nav-links li a:hover{
   border-radius: 50%;
 }
 .card-container{
-  width: 55%;
+  width: 70%;
+  height: 400px;
+  padding-top: 3rem;
 }
 
 #about-title{
   font-size: 2rem;
 }
+
 .card{
   position: relative;
   top:20px;
