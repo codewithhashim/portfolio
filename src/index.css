@@ -57,21 +57,21 @@ code {
 nav{
   overflow-y: hidden;
 }
-#mobilenav{
-  display: none;
-}
+
 ul.nav-links, ul.nav-links li{
   overflow-y: hidden;
   list-style-type: none;
   display: inline;
   padding: 10px;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 ul.nav-links li a{
   text-decoration: none;
   color: #fff;
   padding: 0 5px;
   z-index:222;
+  cursor: pointer;
 }
 ul.nav-links li a:hover{
  color:#37b6c5;
