@@ -377,11 +377,16 @@ color:#0D171C;
 width:100%;
 display:flex;
 justify-content:center;
+
   }
   .card-container{
     width: 100%;
     overflow:hidden;
     margin-top:50px;
+    height: auto;
+  }
+  .card{
+    height: auto;
   }
   #about-title{
     text-align:center;
