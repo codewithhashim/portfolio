@@ -1,4 +1,4 @@
-import myProfile from './assets/images/myProfile.jpg'
+import myProfilePic from './assets/images/Hashim.png'
 
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
 
             <div className="about-container">
                 <div className="profile-picture">
-                    <img src={myProfile} className="my-profile" alt="cool" />
+                    <img src={myProfilePic} className="my-profile" alt="cool" />
                 </div>
                 <div className="card-container">
                     <h3 id="about-title">About Me</h3>
